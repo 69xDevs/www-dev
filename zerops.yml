@@ -1,0 +1,19 @@
+zerops:
+  - setup: sixtyninedevs
+    build:
+      base: nodejs@20
+
+      buildCommands:
+        - pnpm i
+        - pnpm run build
+
+      deploy:
+        - dist
+        - package.json
+        - node_modules
+
+      cache:
+        - node_modules
+        - package-lock.json
+    run:
+      start: pnpm start

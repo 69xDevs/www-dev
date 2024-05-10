@@ -17,3 +17,5 @@ zerops:
         - package-lock.json
     run:
       start: pnpm start
+    envVariables:
+      HOST: 0.0.0.0

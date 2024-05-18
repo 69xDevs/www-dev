@@ -9,21 +9,29 @@ import Layout from "../layouts/Layout.astro";
   >
     <div>
       <h1 class="text-center text-7xl font-bold">69x Devs</h1>
-      <p class="text-center pt-4 pb-14">A community for cracked developers.</p>
+      <p class="text-center pt-4 pb-14 max-w-xl text-gray-700 font-medium">
+        A community for cracked developers. We are still setting up, but we'll
+        push out a dashboard where you can deploy your own personal website
+        using Git, or even with our upcoming CLI in the future. Additionally, we
+        would love to support you on your developer journey, possibly by
+        providing funding.
+      </p>
     </div>
     <div class="flex-row space-x-5">
-      <a
-        href="https://github.com/69xDevs/registry"
-        target="_blank"
-        class="px-4 py-3 bg-slate-100 hover:bg-slate-50 active:bg-slate-200 duration-300 text-[#5a5a5a] text-lg font-medium rounded-md"
-        >Open Issue</a
-      >
-      <a
-        href="https://discord.gg/SaSq8earnu"
-        target="_blank"
-        class="px-4 py-3 bg-[#242424] hover:bg-[#323232] active:bg-[#4d4d4d] text-[#fff] text-lg font-medium rounded-md hover:duration-300 hover:-translate-y-0.5"
-        >Join Discord Server</a
-      >
+      <a href="https://github.com/69xDevs/registry" target="_blank">
+        <button
+          class="px-4 py-2.5 bg-slate-100 hover:bg-slate-50 active:bg-slate-200 hover:duration-300 text-[#5a5a5a] text-lg font-medium rounded-md hover:-translate-y-0.5"
+        >
+          Open Issue
+        </button>
+      </a>
+      <a href="https://discord.gg/SaSq8earnu" target="_blank">
+        <button
+          class="px-4 py-2.5 bg-[#242424] hover:bg-[#323232] active:bg-[#4d4d4d] text-[#fff] text-md font-medium rounded-md hover:duration-300 hover:-translate-y-0.5"
+        >
+          Join Discord Server
+        </button>
+      </a>
     </div>
   </main>
 </Layout>

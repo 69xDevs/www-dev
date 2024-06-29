@@ -15,4 +15,5 @@ zerops:
       ports:
         - port: 4321
           HOST: 0.0.0.0
+          httpSupport: true
       start: pnpm start

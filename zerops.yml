@@ -14,5 +14,5 @@ zerops:
       base: nodejs@20
       ports:
         - port: 4321
-          httpSupport: true
+          HOST: 0.0.0.0
       start: pnpm start

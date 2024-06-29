@@ -8,10 +8,11 @@ zerops:
       deployFiles:
         - dist
         - package.json
+        - pnpm-lock.yaml
         - node_modules
     run:
       base: nodejs@20
       ports:
-        - port: 3000
+        - port: 4321
           httpSupport: true
       start: pnpm start

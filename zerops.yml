@@ -2,20 +2,16 @@ zerops:
   - setup: sixtyninedevs
     build:
       base: nodejs@20
-
       buildCommands:
         - pnpm i
         - pnpm run build
-
-      deploy:
+      deployFiles:
         - dist
         - package.json
         - node_modules
-
-      cache:
-        - node_modules
-        - package-lock.json
     run:
+      base: nodejs@20
+      ports:
+        - port: 3000
+          httpSupport: true
       start: pnpm start
-    envVariables:
-      HOST: 0.0.0.0

@@ -14,6 +14,7 @@ zerops:
       base: nodejs@20
       ports:
         - port: 4321
+          httpSupport: true
       envVariables:
         PORT: 4321
         HOST: 0.0.0.0
